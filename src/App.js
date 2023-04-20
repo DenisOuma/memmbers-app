@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Button from "./components/Button";
+import { UsersList } from "./components/UsersList";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="container mx-auto">
+			<UsersList />
+			<Button primary>Welcome</Button>
+			<h1>Welcome to my page</h1>
+		</div>
+	);
 }
 
 export default App;
